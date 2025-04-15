@@ -1,0 +1,40 @@
+﻿<Window x:Class="Avtoservice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Avtoservice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1050">
+    <Border BorderThickness="5" BorderBrush="Orange">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="143*"/>
+                <ColumnDefinition Width="647*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="12*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Background="MistyRose" Height="auto" Width="auto" Grid.ColumnSpan="2">
+
+            </StackPanel>
+            <StackPanel Grid.Row="2" Background="MistyRose" Height="auto" Width="auto" Grid.ColumnSpan="2">
+
+            </StackPanel>
+            <Image Source="client\service_logo.ico"  Margin="10,0,0,0"  Height="30"  VerticalAlignment="Center"  HorizontalAlignment="Left" Width="37"  Stretch="Uniform"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Image.RenderTransform>
+            </Image>
+            <Frame x:Name="frame" Height="auto" Width="auto" LoadCompleted="frame_LoadCompleted" Grid.ColumnSpan="2" Margin="0,30,0,30" Grid.RowSpan="3" NavigationUIVisibility="Hidden"/>
+
+
+
+
+
+        </Grid>
+    </Border>
+
+</Window>

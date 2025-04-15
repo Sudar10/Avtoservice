@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="187f2c8353294810afa74c6cf9f99d52" Name="Diagram1">
+        <EntityTypeShape EntityType="AvtoservesModel1.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.ClientService" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.Gender" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.Manufacturer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.ProductPhoto" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.Service" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.ServicePhoto" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.Tag" Width="1.5" PointX="3.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtoservesModel1.TagOfClient" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="AvtoservesModel1.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_TagOfClient_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_ProductSale_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_ProductPhoto_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_ServicePhoto_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.FK_TagOfClient_Tag" ManuallyRouted="false" />
+        <AssociationConnector Association="AvtoservesModel1.AttachedProduct" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
